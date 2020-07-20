@@ -2,16 +2,9 @@
       <v-card outlined  class="my-7"  >
        
           <v-row class="mx-2 py-7 px-10" >
-            <v-col
-              class="align-center justify-space-between"
-              cols="12" md="12" sm="12"
-            >
-              <v-row
-                align="center"
-                class="mr-0"
-              >
+   
 
-            <v-col cols="4" md="4" sm="12">
+            <v-col cols="12" md="4" sm="12">
               <v-text-field
                 prepend-icon="mdi-account"
                 label="First Name"
@@ -19,7 +12,7 @@
                 :rules="InputRulescompanyName"
               ></v-text-field>
             </v-col>
-            <v-col cols="4" md="4" sm="12">
+            <v-col cols="12" md="4" sm="12">
               <v-text-field
                 prepend-icon="mdi-account"
                 label="First Name"
@@ -27,7 +20,15 @@
                 :rules="InputRulescompanyName"
               ></v-text-field>
             </v-col>
-            <v-col cols="4" md="4" sm="12">
+            <v-col cols="12" md="4" sm="12">
+              <v-text-field
+                prepend-icon="mdi-account"
+                label="First Name"
+                v-model="companyName"
+                :rules="InputRulescompanyName"
+              ></v-text-field>
+            </v-col>
+            <v-col cols="12" md="4" sm="12">
               <v-text-field
                 prepend-icon="mdi-email"
                 label="Email"
@@ -35,10 +36,9 @@
                 :rules="InputRulescompanyEmail"
               ></v-text-field>
             </v-col>
-              </v-row>
 
-            </v-col>
-            <v-col cols="4">
+
+            <v-col cols="12" md="4" sm="12">
               <v-text-field
                 prepend-icon="mdi-phone"
                 label="Phone Number"
@@ -46,7 +46,7 @@
                 :rules="InputRulesphoneNumber">
                </v-text-field>
             </v-col>
-            <v-col cols="4" >
+            <v-col cols="12" md="4" sm="12" >
               <v-text-field
                 prepend-icon="mdi-folder"
                 label="KRA PIN"
@@ -55,7 +55,7 @@
                </v-text-field>
             </v-col>
 
-            <v-col cols="4">
+            <v-col cols="12" md="4" sm="12">
               <v-text-field
                 type="tel"
                 prepend-icon="mdi-folder-account"
@@ -65,7 +65,7 @@
               ></v-text-field>
             </v-col>
 
-            <v-col cols="4">
+            <v-col cols="12" md="4" sm="12">
               <v-text-field
                 prepend-icon="mdi-folder-account"
                 label="Bank Name"
@@ -73,7 +73,7 @@
                 :rules="InputRulesbankName"
               ></v-text-field>
             </v-col>
-            <v-col cols="4">
+            <v-col cols="12" md="4" sm="12">
               <v-text-field
                 type="tel"
                 prepend-icon="mdi-folder-pound"
@@ -82,7 +82,7 @@
                 :rules="InputRulesbankBranch"
               ></v-text-field>
             </v-col>
-            <v-col cols="4">
+            <v-col cols="12" md="4" sm="12">
               <v-text-field
                 type="tel"
                 prepend-icon="mdi-folder-table"
@@ -92,7 +92,7 @@
               ></v-text-field>
             </v-col>
 
-            <v-col cols="6">
+            <v-col cols="12" md="6" sm="12">
               <v-text-field
                 type="tel"
                 prepend-icon="mdi-badge-account-horizontal"
