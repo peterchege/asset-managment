@@ -80,7 +80,7 @@
             <v-col cols="12" md="4" sm="12">
               <v-text-field
                 prepend-icon="mdi-folder-account"
-                label="Maritual Status"
+                label="Bank Name"
                 v-model="bankName"
                 :rules="InputRulesbankName"
               ></v-text-field>
@@ -89,7 +89,7 @@
               <v-text-field
                 type="tel"
                 prepend-icon="mdi-folder-pound"
-                label="Postal Address"
+                label="Bank Branch"
                 v-model="bankBranch"
                 :rules="InputRulesbankBranch"
               ></v-text-field>
@@ -98,54 +98,21 @@
               <v-text-field
                 type="tel"
                 prepend-icon="mdi-folder-table"
-                label="Postal Code"
+                label="Bank Account No."
                 v-model="bankAccount"
                 :rules="InputRulesbankAccount"
               ></v-text-field>
             </v-col>
 
-            <v-col cols="12" md="4" sm="12">
-              <v-text-field
-                type="tel"
-                prepend-icon="mdi-folder-table"
-                label="City / Town"
-                v-model="bankAccount"
-                :rules="InputRulesbankAccount"
-              ></v-text-field>
-            </v-col>
-
-            <v-col cols="12" md="4" sm="12">
-              <v-text-field
-                type="tel"
-                prepend-icon="mdi-domain"
-                label="Place of work"
-                v-model="address"
-                :rules="InputRulesAddress"
-              ></v-text-field>
-            </v-col>
-
-            <v-col cols="12" md="4" sm="12">
-              <v-text-field
-                type="tel"
-                prepend-icon="mdi-office-building"
-                label="Client Occupation / Business"
-                v-model="address"
-                :rules="InputRulesAddress"
-              ></v-text-field>
-            </v-col>
-
-            <v-col cols="12" md="4" sm="12">
+            <v-col cols="12" md="6" sm="12">
               <v-text-field
                 type="tel"
                 prepend-icon="mdi-badge-account-horizontal"
-                label="Pysical Address"
+                label="Physical Address"
                 v-model="address"
                 :rules="InputRulesAddress"
               ></v-text-field>
             </v-col>
-
-
-
 
           </v-row>
        
