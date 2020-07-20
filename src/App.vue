@@ -8,11 +8,11 @@
       <div class="d-flex align-center">
         <v-img
           alt="APA Insurance"
-          class="shrink mr-2"
+          class="shrink mr-2 "
           contain
           src="https://apainsurance.org/img/logon.png"
           transition="scale-transition"
-          width="80"
+          width="70"
         />
 
       </div>
