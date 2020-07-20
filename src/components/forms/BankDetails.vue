@@ -2,43 +2,24 @@
       <v-card outlined  class="my-7"  >
        
           <v-row class="mx-2 py-7 px-10" >
-   
-
+  
             <v-col cols="12" md="4" sm="12">
               <v-text-field
                 prepend-icon="mdi-account"
-                label="SurName"
+                label="Account Holder"
                 v-model="companyName"
                 :rules="InputRulescompanyName"
                 required
               ></v-text-field>
             </v-col>
             <v-col cols="12" md="4" sm="12">
-              <v-text-field
-                prepend-icon="mdi-account"
-                label="First Name"
-                v-model="companyName"
-                :rules="InputRulescompanyName"
-                required
-              ></v-text-field>
-            </v-col>
-            <v-col cols="12" md="4" sm="12">
-              <v-text-field
-                prepend-icon="mdi-account"
-                label="Last Name"
-                v-model="companyName"
-                :rules="InputRulescompanyName"
-                required
-              ></v-text-field>
-            </v-col>
-            <v-col cols="12" md="4" sm="12">
-              <v-text-field
-                prepend-icon="mdi-email"
-                label="Email Address"
-                v-model="companyEmail"
-                :rules="InputRulescompanyEmail"
-                required
-              ></v-text-field>
+             <v-select
+                prepend-icon="mdi-bank"
+                :items="sections"
+                label="Account Type"
+                v-model="department"
+                :rules="InputRulesDept">
+                </v-select>
             </v-col>
 
 
@@ -134,6 +115,7 @@ export default {
       address:'',
       assignedRole: 5,
       assignedService:'',
+      sections: ["Current", "Savings"],
       dialog: false,
       dialogInvite: false,
       alert: false,
