@@ -19,7 +19,7 @@
 
     </v-app-bar>
 
-    <v-content>
+    <v-content class="accent">
       <v-container align="center" justify="center" class="mt-10">
           <app-form/>
       </v-container>

@@ -28,7 +28,8 @@
           color="grey lighten-1"
         >
 
-         <app-personal-form/>
+            <app-personal-form/>
+
         </v-card>
 
         <v-btn
@@ -36,9 +37,9 @@
           @click="e1 = 2"
         >
           Continue
-           <v-icon dark right>
-                  mdi-checkbox-marked-circle
-                  </v-icon>
+            <v-icon dark right>
+                mdi-checkbox-marked-circle
+            </v-icon>
         </v-btn>
 
         <v-btn text>Cancel</v-btn>
@@ -48,7 +49,11 @@
         <v-card
           class="mb-12"
           color="grey lighten-1"
-        ></v-card>
+        >
+            
+            <app-bank-form/>
+
+        </v-card>
 
         <v-btn
           color="primary"
@@ -132,6 +137,7 @@
     },
     components: {
     appPersonalForm:() => import ('@/components/forms/PersonalInformation'),
+    appBankForm:() => import ('@/components/forms/BankDetails'),
   },
   }
 </script>
