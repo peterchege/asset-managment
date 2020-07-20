@@ -1,21 +1,17 @@
 <template>
-      <v-card>
-        <v-card-title 
-        class="primary darken-2 white--text justify-center">
-         Personal Information
-        </v-card-title>
-        <v-container >
-          <v-row class="mx-2" >
+      <v-card outlined  class="my-7"  >
+       
+          <v-row class="mx-2 py-7 px-10" >
             <v-col
               class="align-center justify-space-between"
-              cols="12"
+              cols="12" md="12" sm="12"
             >
               <v-row
                 align="center"
                 class="mr-0"
               >
 
-            <v-col cols="4">
+            <v-col cols="4" md="4" sm="12">
               <v-text-field
                 prepend-icon="mdi-account"
                 label="First Name"
@@ -23,7 +19,7 @@
                 :rules="InputRulescompanyName"
               ></v-text-field>
             </v-col>
-            <v-col cols="4">
+            <v-col cols="4" md="4" sm="12">
               <v-text-field
                 prepend-icon="mdi-account"
                 label="First Name"
@@ -31,7 +27,7 @@
                 :rules="InputRulescompanyName"
               ></v-text-field>
             </v-col>
-            <v-col cols="4">
+            <v-col cols="4" md="4" sm="12">
               <v-text-field
                 prepend-icon="mdi-email"
                 label="Email"
@@ -107,35 +103,7 @@
             </v-col>
 
           </v-row>
-        </v-container>
-        <v-card-actions>
-          
-           <div class="ma-auto pb-5">
-              <v-btn large
-              class="ma-5 pa-4" 
-              color="secondary"
-               @click="inviteVendor" 
-              :dialogInvite="dialogInvite"
-              dark>
-              submit
-                <v-icon dark right>
-                  mdi-checkbox-marked-circle
-                  </v-icon>
-              </v-btn>
-
-              <v-btn large
-                class="ma-5 pa-4" 
-                color="red"
-                 @click="vendorCancel" 
-                dark>
-                Cancel
-                  <v-icon dark right>
-                    mdi-cancel
-                    </v-icon>
-              </v-btn>
-
-            </div>
-        </v-card-actions>
+       
       </v-card>
     
 </template>

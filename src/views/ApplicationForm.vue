@@ -26,14 +26,19 @@
         <v-card
           class="mb-12"
           color="grey lighten-1"
-          height="200px"
-        ></v-card>
+        >
+
+         <app-personal-form/>
+        </v-card>
 
         <v-btn
           color="primary"
           @click="e1 = 2"
         >
           Continue
+           <v-icon dark right>
+                  mdi-checkbox-marked-circle
+                  </v-icon>
         </v-btn>
 
         <v-btn text>Cancel</v-btn>
@@ -43,7 +48,6 @@
         <v-card
           class="mb-12"
           color="grey lighten-1"
-          height="200px"
         ></v-card>
 
         <v-btn
@@ -51,6 +55,9 @@
           @click="e1 = 3"
         >
           Continue
+           <v-icon dark right>
+                  mdi-checkbox-marked-circle
+                  </v-icon>
         </v-btn>
 
         <v-btn text>Cancel</v-btn>
@@ -59,15 +66,18 @@
       <v-stepper-content step="3">
         <v-card
           class="mb-12"
-          color="grey lighten-1"
-          height="200px"
-        ></v-card>
+        >
+       
+        </v-card>
 
         <v-btn
           color="primary"
           @click="e1 = 1"
         >
           Continue
+           <v-icon dark right>
+                  mdi-checkbox-marked-circle
+                  </v-icon>
         </v-btn>
 
         <v-btn text>Cancel</v-btn>
@@ -76,8 +86,6 @@
       <v-stepper-content step="4">
         <v-card
           class="mb-12"
-          color="grey lighten-1"
-          height="200px"
         ></v-card>
 
         <v-btn
@@ -85,6 +93,9 @@
           @click="e1 = 3"
         >
           Continue
+           <v-icon dark right>
+                  mdi-checkbox-marked-circle
+                  </v-icon>
         </v-btn>
 
         <v-btn text>Cancel</v-btn>
@@ -93,8 +104,6 @@
       <v-stepper-content step="5">
         <v-card
           class="mb-12"
-          color="grey lighten-1"
-          height="200px"
         ></v-card>
 
         <v-btn
@@ -102,6 +111,9 @@
           @click="e1 = 3"
         >
           Continue
+                <v-icon dark right>
+                  mdi-checkbox-marked-circle
+                </v-icon>
         </v-btn>
 
         <v-btn text>Cancel</v-btn>
@@ -118,5 +130,8 @@
         e1: 1,
       }
     },
+    components: {
+    appPersonalForm:() => import ('@/components/forms/PersonalInformation'),
+  },
   }
 </script>
