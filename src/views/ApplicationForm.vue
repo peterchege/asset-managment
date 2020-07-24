@@ -13,11 +13,7 @@
 
       <v-divider></v-divider>
 
-      <v-stepper-step editable :complete="e1 > 4" step="4">General Details</v-stepper-step>
-
-      <v-divider></v-divider>
-
-      <v-stepper-step editable step="5">Funds Details</v-stepper-step>
+      <v-stepper-step editable step="4">General Details</v-stepper-step>
 
     </v-stepper-header>
 
@@ -61,8 +57,8 @@
         >
           Continue
            <v-icon dark right>
-                  mdi-checkbox-marked-circle
-                  </v-icon>
+                mdi-checkbox-marked-circle
+            </v-icon>
         </v-btn>
 
         <v-btn text>Cancel</v-btn>
@@ -72,8 +68,12 @@
         <v-card
           class="mb-12"
         >
-       
+
+        <app-source-fund/>
+
         </v-card>
+
+        
 
         <v-btn
           color="primary"
@@ -106,23 +106,6 @@
         <v-btn text>Cancel</v-btn>
       </v-stepper-content>
 
-      <v-stepper-content step="5">
-        <v-card
-          class="mb-12"
-        ></v-card>
-
-        <v-btn
-          color="primary"
-          @click="e1 = 3"
-        >
-          Continue
-                <v-icon dark right>
-                  mdi-checkbox-marked-circle
-                </v-icon>
-        </v-btn>
-
-        <v-btn text>Cancel</v-btn>
-      </v-stepper-content>
 
     </v-stepper-items>
   </v-stepper>
@@ -138,6 +121,7 @@
     components: {
     appPersonalForm:() => import ('@/components/forms/PersonalInformation'),
     appBankForm:() => import ('@/components/forms/BankDetails'),
+    appSourceFund:() => import ('@/components/forms/SourceFund'),
   },
   }
 </script>
