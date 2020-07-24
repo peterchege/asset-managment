@@ -61,8 +61,8 @@
         >
           Continue
            <v-icon dark right>
-                  mdi-checkbox-marked-circle
-                  </v-icon>
+                mdi-checkbox-marked-circle
+            </v-icon>
         </v-btn>
 
         <v-btn text>Cancel</v-btn>
@@ -72,8 +72,12 @@
         <v-card
           class="mb-12"
         >
-       
+
+        <app-source-fund/>
+        
         </v-card>
+
+        
 
         <v-btn
           color="primary"
@@ -138,6 +142,7 @@
     components: {
     appPersonalForm:() => import ('@/components/forms/PersonalInformation'),
     appBankForm:() => import ('@/components/forms/BankDetails'),
+    appSourceFund:() => import ('@/components/forms/SourceFund'),
   },
   }
 </script>
