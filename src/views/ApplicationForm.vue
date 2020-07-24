@@ -91,7 +91,9 @@
       <v-stepper-content step="4">
         <v-card
           class="mb-12"
-        ></v-card>
+        >
+        <app-general-details/>
+        </v-card>
 
         <v-btn
           color="primary"
@@ -122,6 +124,7 @@
     appPersonalForm:() => import ('@/components/forms/PersonalInformation'),
     appBankForm:() => import ('@/components/forms/BankDetails'),
     appSourceFund:() => import ('@/components/forms/SourceFund'),
+    appGeneralDetails:() => import ('@/components/forms/GeneralDetails'),
   },
   }
 </script>
