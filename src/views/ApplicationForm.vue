@@ -23,7 +23,6 @@
           class="mb-12"
           color="grey lighten-1"
         >
-
             <app-personal-form/>
 
         </v-card>
@@ -77,7 +76,7 @@
 
         <v-btn
           color="primary"
-          @click="e1 = 1"
+          @click="e1 = 4"
         >
           Continue
            <v-icon dark right>

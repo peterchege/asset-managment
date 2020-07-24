@@ -3,7 +3,7 @@
     <div>
 
     <v-card outlined  class="my-7 pa-5"  >
-        <v-card-title>The funds for this investment are from: <span class="red--text"> ( Please tick ) </span> </v-card-title>
+        <v-card-title>General Details <span class="red--text"> ( Please tick where Applicable ) </span> </v-card-title>
         <v-row class="ma-auto">
             <v-col cols="12" md="4">
                 <v-checkbox v-model="selected" label="Sale of an Investment portfolio" value="investment portfolio"></v-checkbox>
