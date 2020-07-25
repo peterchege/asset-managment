@@ -39,23 +39,34 @@
                 <v-card-title>Are you an Apollo Investment Group Employess ?</v-card-title>
             </v-col>
             <v-col cols="12" md="3">
-                <v-checkbox v-model="selected" label="yes" value="yes"></v-checkbox>
+                <v-checkbox v-model="selected" label="Yes" value="employee"></v-checkbox>
             </v-col>
             <v-col cols="12" md="3">
-                <v-checkbox v-model="selected" label="No" value="no"></v-checkbox>
+                <v-checkbox v-model="selected" label="No" value="not an employee"></v-checkbox>
             </v-col>
         </v-row> 
 
         <v-row class="ma-auto">
             <v-col cols="12" md="6">
-                <v-card-title>Preffered mode of recieving monthly correspondence :</v-card-title>
+                <v-card-title>How did you hear about Apollo Unit Trust ?</v-card-title>
             </v-col>
-            <v-col cols="12" md="3">
-                <v-checkbox v-model="selected" label="E-mail" value="email"></v-checkbox>
+            <v-col cols="12" md="1">
+                <v-checkbox v-model="selected" label="Press" value="press"></v-checkbox>
             </v-col>
-            <v-col cols="12" md="3">
-                <v-checkbox v-model="selected" label="Post" value="post"></v-checkbox>
+            <v-col cols="12" md="1">
+                <v-checkbox v-model="selected" label="Radio" value="radio"></v-checkbox>
             </v-col>
+            <v-col cols="12" md="1">
+                <v-checkbox v-model="selected" label="Tv" value="tv"></v-checkbox>
+            </v-col>
+            <v-col cols="12" md="1">
+                <v-checkbox v-model="selected" label="Word of Mouth" value="word of mouth"></v-checkbox>
+            </v-col>
+            <v-col cols="12" md="1">
+                <v-checkbox v-model="selected" label="internet" value="internet"></v-checkbox>
+            </v-col>
+
+            
         </v-row> 
         
     </v-card>            
