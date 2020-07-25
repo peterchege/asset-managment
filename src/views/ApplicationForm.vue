@@ -37,7 +37,6 @@
             </v-icon>
         </v-btn>
 
-        <v-btn text>Cancel</v-btn>
       </v-stepper-content>
 
       <v-stepper-content step="2">
@@ -60,7 +59,7 @@
             </v-icon>
         </v-btn>
 
-        <v-btn text>Cancel</v-btn>
+        <v-btn text>Back</v-btn>
       </v-stepper-content>
 
       <v-stepper-content step="3">
@@ -84,7 +83,7 @@
                   </v-icon>
         </v-btn>
 
-        <v-btn text>Cancel</v-btn>
+        <v-btn text>Back</v-btn>
       </v-stepper-content>
 
       <v-stepper-content step="4">
@@ -98,13 +97,13 @@
           color="primary"
           @click="e1 = 3"
         >
-          Continue
+          Submit
            <v-icon dark right>
                   mdi-checkbox-marked-circle
                   </v-icon>
         </v-btn>
 
-        <v-btn text>Cancel</v-btn>
+        <v-btn text>Back</v-btn>
       </v-stepper-content>
 
 
