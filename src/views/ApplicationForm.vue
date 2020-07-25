@@ -23,7 +23,6 @@
           class="mb-12"
           color="grey lighten-1"
         >
-
             <app-personal-form/>
 
         </v-card>
@@ -38,7 +37,6 @@
             </v-icon>
         </v-btn>
 
-        <v-btn text>Cancel</v-btn>
       </v-stepper-content>
 
       <v-stepper-content step="2">
@@ -61,7 +59,7 @@
             </v-icon>
         </v-btn>
 
-        <v-btn text>Cancel</v-btn>
+        <v-btn text>Back</v-btn>
       </v-stepper-content>
 
       <v-stepper-content step="3">
@@ -77,7 +75,7 @@
 
         <v-btn
           color="primary"
-          @click="e1 = 1"
+          @click="e1 = 4"
         >
           Continue
            <v-icon dark right>
@@ -85,25 +83,27 @@
                   </v-icon>
         </v-btn>
 
-        <v-btn text>Cancel</v-btn>
+        <v-btn text>Back</v-btn>
       </v-stepper-content>
 
       <v-stepper-content step="4">
         <v-card
           class="mb-12"
-        ></v-card>
+        >
+        <app-general-details/>
+        </v-card>
 
         <v-btn
           color="primary"
           @click="e1 = 3"
         >
-          Continue
+          Submit
            <v-icon dark right>
                   mdi-checkbox-marked-circle
                   </v-icon>
         </v-btn>
 
-        <v-btn text>Cancel</v-btn>
+        <v-btn text>Back</v-btn>
       </v-stepper-content>
 
 
@@ -122,6 +122,7 @@
     appPersonalForm:() => import ('@/components/forms/PersonalInformation'),
     appBankForm:() => import ('@/components/forms/BankDetails'),
     appSourceFund:() => import ('@/components/forms/SourceFund'),
+    appGeneralDetails:() => import ('@/components/forms/GeneralDetails'),
   },
   }
 </script>
