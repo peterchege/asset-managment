@@ -36,13 +36,13 @@
 
         <v-row class="ma-auto">
             <v-col cols="12" md="6">
-                <v-card-title>Preffered mode of recieving monthly correspondence :</v-card-title>
+                <v-card-title>Are you an Apollo Investment Group Employess ?</v-card-title>
             </v-col>
             <v-col cols="12" md="3">
-                <v-checkbox v-model="selected" label="E-mail" value="email"></v-checkbox>
+                <v-checkbox v-model="selected" label="yes" value="yes"></v-checkbox>
             </v-col>
             <v-col cols="12" md="3">
-                <v-checkbox v-model="selected" label="Post" value="post"></v-checkbox>
+                <v-checkbox v-model="selected" label="No" value="no"></v-checkbox>
             </v-col>
         </v-row> 
 
